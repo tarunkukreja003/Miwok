@@ -20,7 +20,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
@@ -32,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        CardView textView = (CardView) findViewById(R.id.card_view1);
-        assert textView != null;
-        textView.setOnClickListener(new View.OnClickListener() {
+        CardView cardViewNumber = (CardView) findViewById(R.id.card_view1);
+        assert cardViewNumber != null;
+        cardViewNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,NumbersActivity.class) ;
@@ -43,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView family = (TextView)(findViewById(R.id.family));
-        assert family != null;
-        family.setOnClickListener(new View.OnClickListener() {
+        CardView cardViewFamily = (CardView) (findViewById(R.id.card_view_family));
+        assert cardViewFamily != null;
+        cardViewFamily.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,FamilyActivity.class) ;
@@ -54,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView phrases = (TextView)(findViewById(R.id.phrases));
-        assert phrases != null;
-        phrases.setOnClickListener(new View.OnClickListener() {
+        CardView cardViewPhrases = (CardView) (findViewById(R.id.card_view_phrases));
+        assert cardViewPhrases != null;
+        cardViewPhrases.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,PhrasesActivity.class) ;
@@ -64,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView colors = (TextView)(findViewById(R.id.colors));
-        assert colors !=null ;
-        colors.setOnClickListener(new View.OnClickListener() {
+        CardView cardViewColors = (CardView) (findViewById(R.id.card_view_colors));
+        assert cardViewColors !=null ;
+        cardViewColors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
