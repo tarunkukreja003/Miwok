@@ -16,6 +16,9 @@
     <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Miwok</string>
 
+    <string name="spalsh_text">MIWOK</string>
+    <string name="splash_sub_text">An initiative to depart education</string>
+
     <!-- Category name for phrases [CHAR LIMIT=20] -->
     <string name="category_phrases">Phrases</string>
 

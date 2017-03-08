@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:minHeight="@dimen/list_item_height"
-    android:background="@color/category_family_parent">
+    android:background="@color/category_family_parent"
+    android:foreground="?android:attr/selectableItemBackground">
 
     <ImageView
         android:id="@+id/image1"

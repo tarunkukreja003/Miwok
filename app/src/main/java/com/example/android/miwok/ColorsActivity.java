@@ -3,16 +3,18 @@ package com.example.android.miwok;
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class ColorsActivity extends AppCompatActivity {
+
+    private static final String LOG_TAG = ColorsActivity.class.getSimpleName() ;
 
     private MediaPlayer music ;
     private AudioManager am ;
@@ -77,8 +79,10 @@ public class ColorsActivity extends AppCompatActivity {
                     Word colorPos = words.get(i);
 
                     music = MediaPlayer.create(ColorsActivity.this, colorPos.getmMusicId());
+                    Log.d(LOG_TAG, "Media Player created") ;
 
                     music.start();
+                    Log.d(LOG_TAG, "Media Player started") ;
 
                     music.setOnCompletionListener(listener);
 

@@ -37,6 +37,7 @@
             android:label="@string/category_phrases"/>
         <activity android:name=".ColorsActivity"
             android:label="@string/category_colors"></activity>
+        <activity android:name=".HomeActivity"/>
     </application>
 
 </manifest>
